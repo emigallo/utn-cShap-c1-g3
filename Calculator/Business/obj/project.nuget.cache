@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7c3BsQJfJcHm0cAWtuBssFh5J2HqQXX+upETdY5vdz1scf20kyOGvilxvHonop/f7j2JOV0NW2ryG8wBbGrkIQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\elinnaga\\source\\repos\\utn-cSharp\\Clase5\\Calculator\\Business\\Business.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\elinnaga\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

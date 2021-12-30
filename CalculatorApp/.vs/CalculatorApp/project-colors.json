@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "2da41578-32d5-4828-9e1c-5176eacd909c": {
+      "ProjectGuid": "2da41578-32d5-4828-9e1c-5176eacd909c",
+      "DisplayName": "Business",
+      "ColorIndex": 0
+    },
+    "1f4bc4f4-8823-4fcf-b027-b33e1eff82dc": {
+      "ProjectGuid": "1f4bc4f4-8823-4fcf-b027-b33e1eff82dc",
+      "DisplayName": "ConsoleApp",
+      "ColorIndex": 1
+    },
+    "452fb553-7e86-4d97-9629-67bf3560dafd": {
+      "ProjectGuid": "452fb553-7e86-4d97-9629-67bf3560dafd",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}

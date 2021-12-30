@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "TPkXQEmMSYgJQah9zQwhyUVl+3bFgk8vNwuazapNkIG898hEalMNn4/YM7ZeptwVQBsIV4a9KYV1tEZx01gp0Q==",
+  "dgSpecHash": "sUt90wlglvfPdQfRu5gdtS32w1jLziSQECZfytW7AaPZNOAhEsttdPDVWpbSX0+N73ElWOYrcWkEiNsl5mcOxw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\elinnaga\\source\\repos\\utn-cSharp\\Clase5\\Calculator\\Console\\Console.csproj",
+  "projectFilePath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Calculator\\Console\\Console.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\elinnaga\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
+    "C:\\Users\\martgome\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

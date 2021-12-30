@@ -1,6 +1,9 @@
 ﻿using Business.Models;
 using Business.Operations;
 using Business.Utils;
+using System;
+using Console;
+
 
 namespace Console
 {
@@ -9,7 +12,9 @@ namespace Console
         static void Main(string[] args)
         {
             CalculatorWithHistory calc = new CalculatorWithHistory();
-          
+
+           string str = System.Console.ReadLine();
+            System.Console.WriteLine(str);
 
             calc.Add(4);
             OperationBase add = new AddOperation(3.3);
@@ -39,5 +44,7 @@ namespace Console
 
         //    //return result;
         //}
+
+        
     }
 }

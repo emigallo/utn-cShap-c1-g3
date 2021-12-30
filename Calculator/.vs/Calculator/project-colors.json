@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "e9cad20d-d1ed-4778-a68e-0ea92646c07f": {
+      "ProjectGuid": "e9cad20d-d1ed-4778-a68e-0ea92646c07f",
+      "DisplayName": "Console",
+      "ColorIndex": 0
+    },
+    "83251ea7-abe5-4d4d-994a-0726189dd330": {
+      "ProjectGuid": "83251ea7-abe5-4d4d-994a-0726189dd330",
+      "DisplayName": "Business",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

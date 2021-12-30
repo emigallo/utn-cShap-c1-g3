@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "53c5d0f7-b0bb-41b1-b55a-1fb52bf60494": {
+      "ProjectGuid": "53c5d0f7-b0bb-41b1-b55a-1fb52bf60494",
+      "DisplayName": "GUI",
+      "ColorIndex": 0
+    },
+    "83251ea7-abe5-4d4d-994a-0726189dd330": {
+      "ProjectGuid": "83251ea7-abe5-4d4d-994a-0726189dd330",
+      "DisplayName": "Business",
+      "ColorIndex": 1
+    },
+    "e9cad20d-d1ed-4778-a68e-0ea92646c07f": {
+      "ProjectGuid": "e9cad20d-d1ed-4778-a68e-0ea92646c07f",
+      "DisplayName": "Console",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Archivos varios",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

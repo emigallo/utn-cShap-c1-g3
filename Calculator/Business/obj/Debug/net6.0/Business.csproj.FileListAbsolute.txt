@@ -10,3 +10,15 @@ C:\Users\elinnaga\source\repos\utn-cSharp\Clase5\Calculator\Business\obj\Debug\n
 C:\Users\elinnaga\source\repos\utn-cSharp\Clase5\Calculator\Business\obj\Debug\net6.0\Business.dll
 C:\Users\elinnaga\source\repos\utn-cSharp\Clase5\Calculator\Business\obj\Debug\net6.0\ref\Business.dll
 C:\Users\elinnaga\source\repos\utn-cSharp\Clase5\Calculator\Business\obj\Debug\net6.0\Business.pdb
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\bin\Debug\net6.0\Business.deps.json
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\bin\Debug\net6.0\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\bin\Debug\net6.0\ref\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\bin\Debug\net6.0\Business.pdb
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.csproj.AssemblyReference.cache
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.AssemblyInfoInputs.cache
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.AssemblyInfo.cs
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\ref\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Calculator\Business\obj\Debug\net6.0\Business.pdb

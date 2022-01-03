@@ -1,0 +1,21 @@
+Texto todo en Ingles 
+Metodos public: 1era mayus 
+	private: 1era min 
+
+Atributos privados:_name;
+
+Interfaces IName
+
+Property = Metodo Public
+
+----------------------------------------
+
+Class (Bussines)
+
+	-BoardGame
+	-Player
+	-Match
+	-Token
+
+----------------------------------------
+

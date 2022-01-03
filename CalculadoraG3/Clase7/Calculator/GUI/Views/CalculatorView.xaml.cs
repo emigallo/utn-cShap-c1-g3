@@ -43,21 +43,21 @@ namespace GUI.Views
             Button button = sender as Button;
 
 
-            int value = int.Parse(display.Content.ToString());
+           
             display.Content += button.Content.ToString();
 
-            this._vm.AddValue(value);
+           
         }
             
         
         private void AddOperationButton_Click(object sender, RoutedEventArgs e)
         {
 
-
-
             Button button = sender as Button;
             string key = button.Content.ToString();
 
+            int value = int.Parse(button.Content.ToString());
+            this._vm.AddValue(value);
 
             OperationBase op = new AddOperation();
             display.Content += key;

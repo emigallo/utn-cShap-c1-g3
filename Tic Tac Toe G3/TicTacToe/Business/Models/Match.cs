@@ -12,6 +12,7 @@ namespace Business.Models
         private Player _player1;
         private Player _player2;
         private Player _actualPlayer;
+        private Boolean _gameOver;
 
 
         public Match()
@@ -19,24 +20,43 @@ namespace Business.Models
             this._boardGame = new BoardGame();
             this._player1 = new Player("X", this._boardGame);
             this._player2 = new Player("O", this._boardGame);
-            this._actualPlayer = this._player1;   
+            this._actualPlayer = this._player1;
+            this._gameOver = false;
         }
 
-        public void PlayGame(int x,int y)
+        public Boolean PlayGame(int x, int y)
         {
-            if (x >= 0 && x <= 2 && y >= 0 && y <= 2)
+            if (this._gameOver)
+            {
+                throw new Exception("Juego terminado");
+            }
+
+            if (!(x >= 0 && x <= 2 && y >= 0 && y <= 2))
 
             {
-                if (this._actualPlayer.AddToken(x, y))
-                {
-                    SwitchPlayer();
-                }
+                return false;
             }
+
+            if (!this._actualPlayer.AddToken(x, y))
+            {
+                return false;
+            }
+
+            if (this._boardGame.CheckDrow() || this._boardGame.CheckWinner())
+            {
+                this._gameOver = true;
+
+                return this._gameOver;
+            }
+
+            SwitchPlayer();
+
+            return false;
         }
 
         private void SwitchPlayer()
         {
-            if(this._actualPlayer == this._player1)
+            if (this._actualPlayer == this._player1)
             {
                 this._actualPlayer = this._player2;
             }
@@ -47,7 +67,9 @@ namespace Business.Models
 
         }
 
-        
+
+
+
 
     }
 }

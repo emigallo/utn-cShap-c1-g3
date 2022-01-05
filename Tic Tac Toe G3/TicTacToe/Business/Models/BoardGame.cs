@@ -8,12 +8,20 @@ namespace Business.Models
 {
     public class BoardGame
     {
-            
-        String[,] board = new String[3,3]; //Tablero 
+
+        String[,] board; //Tablero 
 
         public BoardGame()
         {
-            
+            this.board = new String[3, 3];
+            for (int i = 0; i <= 2; i++)
+            {
+                for (int j = 0; j <= 2; j++)
+                {
+                    this.board[i, j] = new String("");
+                }
+
+            }
 
         }
         /// <summary>
@@ -68,20 +76,23 @@ namespace Business.Models
 
         private Boolean CheckRow(int x)
         {     
-            return this.board[x,0] == this.board[x,1] && this.board[x, 1] == this.board[x,2];
+            return this.board[x,0] != "" && this.board[x,0] == this.board[x,1] && this.board[x, 1] == this.board[x,2];
 
         }
 
         private Boolean CheckColumn(int y)
         {
-            return this.board[0, y] == this.board[1, y] && this.board[1, y] == this.board[2, y];
+            return this.board[0, y] != "" && this.board[0, y] == this.board[1, y] && this.board[1, y] == this.board[2, y];
 
         }
 
         private Boolean CheckDiagonal()
         {
 
-            return (this.board[0, 0] == this.board[1, 1] && this.board[2, 2] == this.board[1, 1]) || (this.board[0, 2] == this.board[1, 1] && this.board[2, 0] == this.board[1, 1]);
+            return 
+                
+                (this.board[0,0] != "" && this.board[0, 0] == this.board[1, 1] && this.board[2, 2] == this.board[1, 1]) 
+                || (this.board[0, 2] != "" && this.board[0, 2] == this.board[1, 1] && this.board[2, 0] == this.board[1, 1]);
 
         }
 

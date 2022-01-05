@@ -13,6 +13,7 @@ namespace Business.Models
         private Player _player2;
         private Player _actualPlayer;
         private Boolean _gameOver;
+        private BoardView _boardView;
 
 
         public Match()
@@ -22,6 +23,7 @@ namespace Business.Models
             this._player2 = new Player("O", this._boardGame);
             this._actualPlayer = this._player1;
             this._gameOver = false;
+            _boardView = new BoardView();
         }
 
         public Boolean PlayGame(int x, int y)
@@ -37,10 +39,12 @@ namespace Business.Models
                 return false;
             }
 
-            if (!this._actualPlayer.AddToken(x, y))
+            if (!this._actualPlayer.AddToken(x, y, _boardView))
             {
                 return false;
             }
+
+            _boardView.PrintBoard();
 
             if (this._boardGame.CheckDrow() || this._boardGame.CheckWinner())
             {

@@ -27,6 +27,18 @@ namespace Business.Models
 
         }
 
+        public Boolean AddToken(int x,int y, BoardView boardView)
+        {
+            if (this.AddToken(x, y))
+            {
+                boardView.UpdateAt(y, x, this.Symbol);
+                return true;    
+            }
+
+            return false;
+
+        }
+
 
     }
 }

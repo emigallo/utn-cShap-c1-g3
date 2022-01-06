@@ -22,3 +22,15 @@ C:\Users\lgiampie\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\
 C:\Users\lgiampie\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.dll
 C:\Users\lgiampie\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\ref\Business.dll
 C:\Users\lgiampie\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.pdb
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\bin\Debug\net5.0\Business.deps.json
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\bin\Debug\net5.0\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\bin\Debug\net5.0\ref\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\bin\Debug\net5.0\Business.pdb
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.csproj.AssemblyReference.cache
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.AssemblyInfoInputs.cache
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.AssemblyInfo.cs
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.csproj.CoreCompileInputs.cache
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\ref\Business.dll
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\Business\obj\Debug\net5.0\Business.pdb

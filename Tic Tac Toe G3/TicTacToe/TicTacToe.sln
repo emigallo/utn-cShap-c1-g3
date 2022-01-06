@@ -5,7 +5,9 @@ VisualStudioVersion = 17.0.32002.185
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Business.csproj", "{7560ECDC-2686-4772-82A2-B95E5C323195}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleTicTacToe", "ConsoleTicTacToe\ConsoleTicTacToe.csproj", "{34BD6D62-6011-45A4-AC8F-EC09104E7CCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleTicTacToe", "ConsoleTicTacToe\ConsoleTicTacToe.csproj", "{34BD6D62-6011-45A4-AC8F-EC09104E7CCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI", "GUI\GUI.csproj", "{B16C0F2A-9FE8-47A8-9ABE-D225943C9F05}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{34BD6D62-6011-45A4-AC8F-EC09104E7CCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34BD6D62-6011-45A4-AC8F-EC09104E7CCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34BD6D62-6011-45A4-AC8F-EC09104E7CCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B16C0F2A-9FE8-47A8-9ABE-D225943C9F05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B16C0F2A-9FE8-47A8-9ABE-D225943C9F05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B16C0F2A-9FE8-47A8-9ABE-D225943C9F05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B16C0F2A-9FE8-47A8-9ABE-D225943C9F05}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

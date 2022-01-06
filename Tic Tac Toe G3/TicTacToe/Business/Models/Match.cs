@@ -14,6 +14,7 @@ namespace Business.Models
         private Player _actualPlayer;
         private Boolean _gameOver;
         private BoardView _boardView;
+        private String _lastSymbol;
 
 
         public Match()
@@ -46,6 +47,8 @@ namespace Business.Models
 
             _boardView.PrintBoard();
 
+            _lastSymbol = _actualPlayer.Symbol;
+
             if (this._boardGame.CheckDrow() || this._boardGame.CheckWinner())
             {
                 this._gameOver = true;
@@ -53,6 +56,8 @@ namespace Business.Models
                 return this._gameOver;
             }
 
+
+            
             SwitchPlayer();
 
             return false;
@@ -69,6 +74,11 @@ namespace Business.Models
                 this._actualPlayer = this._player1;
             }
 
+        }
+
+        public String GetSymbol()
+        {
+            return new String (this._lastSymbol);
         }
 
 

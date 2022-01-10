@@ -1,0 +1,30 @@
+﻿<Window x:Class="GUI.Views.LobbyView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GUI.Views"
+        mc:Ignorable="d"
+        Title="LobbyView" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\elinnaga\source\repos\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\Assets\paper.png" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="87*"></RowDefinition>
+            <RowDefinition Height="134*"></RowDefinition>
+            <RowDefinition Height="40*"></RowDefinition>
+            <RowDefinition Height="87*"></RowDefinition>
+            <RowDefinition Height="87*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBox HorizontalAlignment="Left" Margin="167,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Height="18"/>
+        <TextBox HorizontalAlignment="Left" Margin="534,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="120" Height="18"/>
+        <Label Content="Player 1" HorizontalAlignment="Left" Margin="192,0,0,0" Grid.Row="2" VerticalAlignment="Center" Width="119"/>
+        <Label Content="Player 2" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Center" Margin="533,0,0,0" Width="98"/>
+        <Label Content="X" HorizontalAlignment="Left" Margin="207,0,0,0" Grid.Row="1" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="48" FontWeight="Bold"/>
+        <Label Content="Tic Tac Toe" HorizontalAlignment="Left" Margin="276,0,0,0" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="48"/>
+        <Label Content="O" HorizontalAlignment="Left" Margin="534,0,0,0" Grid.Row="1" VerticalAlignment="Center" FontFamily="Comic Sans MS" FontSize="48" FontWeight="Bold"/>
+        <Button Content="Back" HorizontalAlignment="Left" Margin="141,0,0,0" Grid.Row="4" VerticalAlignment="Center" Click="Button_Click" FontFamily="Comic Sans MS" FontSize="22"/>
+        <Button Content="Start" HorizontalAlignment="Left" Margin="643,0,0,0" Grid.Row="4" VerticalAlignment="Center" Click="Button_Start" FontFamily="Comic Sans MS" FontSize="22"/>
+    </Grid>
+</Window>

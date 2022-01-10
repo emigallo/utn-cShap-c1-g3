@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj": {}
+    "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj": {
+    "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
+        "projectUniqueName": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
         "projectName": "Business",
-        "projectPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
-        "packagesPath": "C:\\Users\\martgome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\obj\\",
+        "projectPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
+        "packagesPath": "C:\\Users\\elinnaga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\martgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\elinnaga\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -62,21 +58,17 @@
         }
       }
     },
-    "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj": {
+    "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj",
+        "projectUniqueName": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj",
         "projectName": "GUI",
-        "projectPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj",
-        "packagesPath": "C:\\Users\\martgome\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\obj\\",
+        "projectPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\GUI.csproj",
+        "packagesPath": "C:\\Users\\elinnaga\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\GUI\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\martgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\elinnaga\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,8 +82,8 @@
           "net5.0-windows7.0": {
             "targetAlias": "net5.0-windows",
             "projectReferences": {
-              "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj": {
-                "projectPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj"
+              "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj": {
+                "projectPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj"
               }
             }
           }

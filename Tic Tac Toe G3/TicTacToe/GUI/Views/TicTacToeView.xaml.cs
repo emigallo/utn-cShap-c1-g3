@@ -35,12 +35,12 @@ namespace GUI.Views
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
-
+            
             String key = button.Tag.ToString();
 
-            (int x, int y) = _vm.SendKey(key);
+            Coordinates coord = _vm.GetCoordinate(key);
 
-            Boolean _matchWin = _vm.PlayGame(x, y);
+            Boolean _matchWin = _vm.PlayGame(coord.X, coord.Y);
                 
 
             button.Content = _vm.GetSymbol();

@@ -15,7 +15,12 @@
       "ProjectGuid": "34bd6d62-6011-45a4-ac8f-ec09104e7ccd",
       "DisplayName": "ConsoleTicTacToe",
       "ColorIndex": 1
+    },
+    "b16c0f2a-9fe8-47a8-9abe-d225943c9f05": {
+      "ProjectGuid": "b16c0f2a-9fe8-47a8-9abe-d225943c9f05",
+      "DisplayName": "GUI",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

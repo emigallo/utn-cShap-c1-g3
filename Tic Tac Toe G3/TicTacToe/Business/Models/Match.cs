@@ -34,11 +34,6 @@ namespace Business.Models
                 throw new Exception("Juego terminado");
             }
 
-            if (!(x >= 0 && x <= 2 && y >= 0 && y <= 2))
-
-            {
-                return false;
-            }
 
             if (!this._actualPlayer.AddToken(x, y, _boardView))
             {

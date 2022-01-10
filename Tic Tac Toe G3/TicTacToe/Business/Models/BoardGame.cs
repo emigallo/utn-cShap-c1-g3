@@ -76,23 +76,66 @@ namespace Business.Models
 
         private Boolean CheckRow(int x)
         {     
-            return this.board[x,0] != "" && this.board[x,0] == this.board[x,1] && this.board[x, 1] == this.board[x,2];
+           int i = 0;
+            Boolean winner = false;
+          
+          
+                if (!board[x, i].Equals(""))
+                {       
+                    winner = true;
+
+                    for(int j = 0; j < this.board.GetLength(0); j++)
+                    {
+                     winner &= board[x, i] == (board[x,j]);
+                    }
+                
+                }
+         
+                return winner;
 
         }
 
         private Boolean CheckColumn(int y)
         {
-            return this.board[0, y] != "" && this.board[0, y] == this.board[1, y] && this.board[1, y] == this.board[2, y];
+            int i = 0;
+            Boolean winner = false;
+
+
+            if (!board[i, y].Equals(""))
+            {
+                winner = true;
+
+                for (int j = 0; j < this.board.GetLength(0); j++)
+                {
+                    winner &= board[i, y] == (board[j, y]);
+                }
+
+            }
+
+            return winner;
 
         }
 
         private Boolean CheckDiagonal()
         {
 
-            return 
-                
-                (this.board[0,0] != "" && this.board[0, 0] == this.board[1, 1] && this.board[2, 2] == this.board[1, 1]) 
-                || (this.board[0, 2] != "" && this.board[0, 2] == this.board[1, 1] && this.board[2, 0] == this.board[1, 1]);
+            int i = 0;
+            Boolean winner = false;
+
+
+            if (!board[i, i].Equals(""))
+            {
+                winner = true;
+
+                for (int j = 0; j < this.board.GetLength(0); j++)
+                {
+                    winner &= board[i, i] == (board[j, j]);
+                    //Todo hay que chequear la otra diagonal
+                }
+
+            }
+
+            return winner;
 
         }
 

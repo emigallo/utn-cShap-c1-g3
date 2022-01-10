@@ -41,7 +41,8 @@ namespace GUI.Views
             Coordinates coord = _vm.GetCoordinate(key);
 
             Boolean _matchWin = _vm.PlayGame(coord.X, coord.Y);
-                
+
+            button.IsEnabled = false;
 
             button.Content = _vm.GetSymbol();
 

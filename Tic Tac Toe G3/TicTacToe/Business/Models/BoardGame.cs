@@ -8,7 +8,6 @@ namespace Business.Models
 {
     public class BoardGame
     {
-
         String[,] board; //Tablero 
 
         public BoardGame()
@@ -76,43 +75,39 @@ namespace Business.Models
 
         private Boolean CheckRow(int x)
         {     
-           int i = 0;
-            Boolean winner = false;
+            int i = 0;
+            string firstPosition = board[x,0];
           
-          
-                if (!board[x, i].Equals(""))
-                {       
-                    winner = true;
-
-                    for(int j = 0; j < this.board.GetLength(0); j++)
+                if (!firstPosition.Equals(""))
+                {        
+                    while(firstPosition == board[x, ++i])
                     {
-                     winner &= board[x, i] == (board[x,j]);
+                        if (i == 2)
+                            return true;
                     }
-                
+
                 }
          
-                return winner;
+                return false;
 
         }
 
         private Boolean CheckColumn(int y)
         {
             int i = 0;
-            Boolean winner = false;
+            string firstPosition = board[0, y];
 
-
-            if (!board[i, y].Equals(""))
+            if (!firstPosition.Equals(""))
             {
-                winner = true;
-
-                for (int j = 0; j < this.board.GetLength(0); j++)
+                while (firstPosition == board[++i, y])
                 {
-                    winner &= board[i, y] == (board[j, y]);
+                    if (i == 2)
+                        return true;
                 }
 
             }
 
-            return winner;
+            return false;
 
         }
 
@@ -120,22 +115,31 @@ namespace Business.Models
         {
 
             int i = 0;
-            Boolean winner = false;
+            string firstPosition = board[0, 0];
 
-
-            if (!board[i, i].Equals(""))
+            if (!firstPosition.Equals(""))
             {
-                winner = true;
-
-                for (int j = 0; j < this.board.GetLength(0); j++)
+                while (firstPosition == board[++i, i])
                 {
-                    winner &= board[i, i] == (board[j, j]);
-                    //Todo hay que chequear la otra diagonal
+                    if (i == 2)
+                        return true;
+                }
+
+            }
+            i = 0;
+            firstPosition = board[0, 2];
+
+            if (!firstPosition.Equals(""))
+            {
+                while (firstPosition == board[++i, 2-i])
+                {
+                    if (i == 2)
+                        return true;
                 }
 
             }
 
-            return winner;
+            return false;
 
         }
 

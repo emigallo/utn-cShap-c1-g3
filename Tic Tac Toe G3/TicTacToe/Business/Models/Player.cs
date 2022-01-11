@@ -9,15 +9,18 @@ namespace Business.Models
     public class Player
     {
 
-        public Player(String symbol,BoardGame board)
+        public Player(String symbol,BoardGame board,String name)
         {
            this.Symbol = symbol;
            this.Board = board;
+           this.Name = name;
             
         }
 
         public String Symbol { get; init; }
-        private BoardGame Board { get; set; } 
+        private BoardGame Board { get; set; }
+
+        private String Name { get; set; }
 
 
         public Boolean AddToken(int x,int y)

@@ -11,11 +11,11 @@ namespace GUI.ViewModel
     {
 
         private Dictionary<string, Coordinates> _buttonMapping;
-        Match match = new Match();
+        private Match match;
 
-        public TicTacToeViewModel()
+        public TicTacToeViewModel(String namePlayer1,String namePlayer2)
         {
-
+            match = new Match(namePlayer1, namePlayer2);
             _buttonMapping = new Dictionary<string, Coordinates>();
 
             for (int i = 0; i <= 2; i++)
@@ -41,5 +41,7 @@ namespace GUI.ViewModel
         {
             return match.GetSymbol();
         }
+
+       
     }
 }

@@ -17,11 +17,11 @@ namespace Business.Models
         private String _lastSymbol;
 
 
-        public Match()
+        public Match(String namePlayer1, String namePlayer2)
         {
             this._boardGame = new BoardGame();
-            this._player1 = new Player("X", this._boardGame);
-            this._player2 = new Player("O", this._boardGame);
+            this._player1 = new Player("X", this._boardGame,namePlayer1);
+            this._player2 = new Player("O", this._boardGame,namePlayer2);
             this._actualPlayer = this._player1;
             this._gameOver = false;
             _boardView = new BoardView();
@@ -75,6 +75,8 @@ namespace Business.Models
         {
             return new String (this._lastSymbol);
         }
+
+  
 
 
 

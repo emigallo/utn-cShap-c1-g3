@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
 namespace GUI.Views
 {
     /// <summary>
@@ -22,8 +23,8 @@ namespace GUI.Views
         private LobbyView lobby;
         public MenuView()
         {
-            InitializeComponent();
             lobby = new LobbyView();
+            InitializeComponent();
 
         }
 
@@ -39,7 +40,9 @@ namespace GUI.Views
         private void Button_Exit_Game(object sender, RoutedEventArgs e)
         {
             Button button = sender as Button;
-            this.Close();
+            
+            System.Windows.Application.Current.Shutdown();
         }
+
     }
 }

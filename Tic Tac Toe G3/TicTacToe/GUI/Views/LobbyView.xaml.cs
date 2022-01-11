@@ -19,25 +19,51 @@ namespace GUI.Views
     /// </summary>
     public partial class LobbyView : Window
     {
-        private TicTacToeView ticTacToe;
+        private TicTacToeView _ticTacToe;
+        private String _player1;
+        private String _player2;
+        private MenuView _menuView;
+
+        private Dictionary<String, Func<String,String>> _textBoxMap;
         public LobbyView()
         {
-            InitializeComponent();
 
-            ticTacToe = new TicTacToeView();
+            _player1 = new String("");
+            _player2 = new String("");
+            _textBoxMap = new Dictionary<String, Func<String,String>>();
+            _textBoxMap.Add("player1", val => _player1 = val);
+            _textBoxMap.Add("player2",  val => _player2 = val);
+
+            InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void TextBox_Player(object sender, RoutedEventArgs e)
         {
+            TextBox textBox = sender as TextBox;
+            String key = textBox.Name;
+            _textBoxMap[key].Invoke(textBox.Text);
+        
+           
+        }
 
+        private void Button_Back(object sender, RoutedEventArgs e)
+        {
+            _menuView = new MenuView();
+            this.Hide();
+            _menuView.Show();
         }
         private void Button_Start(object sender, RoutedEventArgs e)
-        {
+        {           
             Button button = sender as Button;
-            this.Hide();
-            ticTacToe.Show();
 
-
+            _ticTacToe = new TicTacToeView(_player1, _player2);
+            _ticTacToe.Show();
+            this.Close();
         }
+
+
+
+
+       
     }
 }

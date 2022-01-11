@@ -19,16 +19,17 @@ namespace GUI.Views
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class TicTacToeView : Window
+    public partial class TicTacToeView : Window 
     {
 
         private TicTacToeViewModel _vm;
-
-        public TicTacToeView()
+        
+        public TicTacToeView(String player1,String player2)
         {
             InitializeComponent();
-            _vm = new TicTacToeViewModel(); 
-            DataContext = _vm; 
+            _vm = new TicTacToeViewModel(player1,player2); 
+            DataContext = _vm;
+            
             
         }
 
@@ -46,9 +47,19 @@ namespace GUI.Views
 
             button.Content = _vm.GetSymbol();
 
+
+
             if (_matchWin)
-                MessageBox.Show("Juego Terminado", "Tic Tac Toe");
+ 
+                MessageBox.Show("Gano el Jugador: " + "Tic Tac Toe");
+
         }
 
+        protected override void OnClosed(EventArgs e)
+        {
+            base.OnClosed(e);
+
+            Application.Current.Shutdown();
+        }
     }
 }

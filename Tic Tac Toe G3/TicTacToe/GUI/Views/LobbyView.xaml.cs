@@ -29,7 +29,8 @@ namespace GUI.Views
         private void TextBox_Player(object sender, RoutedEventArgs e)
         {
             TextBox textBox = sender as TextBox;     
-            _textBoxMap[textBox.Name].Invoke(textBox.Text);        
+            _textBoxMap[textBox.Name].Invoke(textBox.Text);
+           
         }
 
         private void Button_Back(object sender, RoutedEventArgs e)
@@ -39,7 +40,16 @@ namespace GUI.Views
             _menuView.Show();
         }
         private void Button_Start(object sender, RoutedEventArgs e)
-        {           
+        {
+            if (player1.Text == "")
+            {
+                player1.Text = "Player 1";
+            }
+
+            if (player2.Text == "")
+            {
+                player2.Text = "Player 2";
+            }
             _ticTacToe = new TicTacToeView(_player1, _player2);
             this.Hide();
             _ticTacToe.Show();

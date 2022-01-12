@@ -15,7 +15,7 @@ namespace Business.Models
 
         private BoardGame Board { get; set; }
 
-        private String Name { get; set; }
+        public String Name { get; set; }
 
         public Boolean AddToken(int x,int y)
         {

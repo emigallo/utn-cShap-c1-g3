@@ -36,6 +36,11 @@ namespace GUI.ViewModel
         public String GetSymbol()
         {
             return _match.GetSymbol();
-        }    
+        }
+        
+        public String GetCurrentPlayer()
+        {
+            return _match.GetCurrentPlayer();
+        }
     }
 }

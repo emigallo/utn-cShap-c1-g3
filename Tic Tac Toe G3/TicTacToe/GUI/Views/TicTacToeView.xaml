@@ -6,12 +6,15 @@
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
         Title="TicTacToe" Height="500" Width="500" Closing="Window_Closing">
-    
+    <Window.Background>
+        <ImageBrush>
+            <ImageBrush.ImageSource>
+                <BitmapImage UriSource="C:\Users\elinnaga\source\repos\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\Assets\paper.png"/>
+            </ImageBrush.ImageSource>
+        </ImageBrush>
+    </Window.Background>
 
     <Grid>
-        <Grid.Background>
-            <ImageBrush ImageSource="C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\Assets\paper.png" Stretch="UniformToFill"/>
-        </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
@@ -32,7 +35,7 @@
         <Button Tag="6" Grid.Row="2" Grid.Column="0" Click="Button_Click" Style="{StaticResource TokenButton}" ></Button>
         <Button Tag="7" Grid.Row="2" Grid.Column="1" Click="Button_Click" Style="{StaticResource TokenButton}" ></Button>
         <Button Tag="8" Grid.Row="2" Grid.Column="2" Click="Button_Click" Style="{StaticResource TokenButton}" ></Button>
-               
+
     </Grid>
-    
+
 </Window>

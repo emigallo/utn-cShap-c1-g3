@@ -8,24 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-    "C:\\Users\\martgome\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\elinnaga\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
+      "projectUniqueName": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
       "projectName": "Business",
-      "projectPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
-      "packagesPath": "C:\\Users\\martgome\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\martgome\\Desktop\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\obj\\",
+      "projectPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\Business.csproj",
+      "packagesPath": "C:\\Users\\elinnaga\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\elinnaga\\source\\repos\\utn-cShap-c1-g3\\Tic Tac Toe G3\\TicTacToe\\Business\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\martgome\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\elinnaga\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

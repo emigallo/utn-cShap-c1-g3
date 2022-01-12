@@ -68,5 +68,10 @@ namespace Business.Models
             return new String (this._lastSymbol);
         }
 
+        public String GetCurrentPlayer()
+        {
+            return this._actualPlayer.Name;
+        }
+
     }
 }

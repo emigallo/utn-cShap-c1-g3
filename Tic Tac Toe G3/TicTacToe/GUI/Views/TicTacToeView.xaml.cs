@@ -9,12 +9,15 @@ namespace GUI.Views
     public partial class TicTacToeView : Window 
     {
         private TicTacToeViewModel _vm;
-        
+        private String _currentPlayer;
+
+
         public TicTacToeView(String player1,String player2)
         {
             InitializeComponent();
             _vm = new TicTacToeViewModel(player1,player2); 
             DataContext = _vm;
+            //player.Content = _vm.GetCurrentPlayer();
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -25,15 +28,20 @@ namespace GUI.Views
 
             Coordinates coord = _vm.GetCoordinate(key);
 
-            Boolean _matchWin = _vm.PlayGame(coord.X, coord.Y); 
+            Boolean _matchWin = _vm.PlayGame(coord.X, coord.Y);
+            
 
             button.IsEnabled = false;
 
             button.Content = _vm.GetSymbol();
 
+            _currentPlayer = _vm.GetCurrentPlayer();
+
+            //player.Content = _currentPlayer;
+
             if (_matchWin)
             {
-                MessageBox.Show("Gano el Jugador: " + "Tic Tac Toe");
+                MessageBox.Show("Gano el Jugador: " + _currentPlayer + "!");
             }   
 
         }

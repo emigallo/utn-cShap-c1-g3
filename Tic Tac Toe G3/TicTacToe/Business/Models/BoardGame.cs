@@ -1,72 +1,57 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Models
 {
     public class BoardGame
     {
-        String[,] board; //Tablero 
+        private String[,] _board; //Tablero 
 
         public BoardGame()
         {
-            this.board = new String[3, 3];
+            this._board = new String[3, 3];
             for (int i = 0; i <= 2; i++)
             {
                 for (int j = 0; j <= 2; j++)
                 {
-                    this.board[i, j] = new String("");
+                    this._board[i, j] = new String("");
                 }
 
             }
 
         }
-        /// <summary>
-        /// Agregar simbolo al tablero. 
-        /// </summary>
-        /// <param name="x"></param>
-        /// <param name="y"></param>
+
         public Boolean AddSymbolToBoard(int x , int y , String token)
         {
-            if(!board[x, y].Equals("")) {
-
+            if(!_board[x, y].Equals("")) 
+            {
                 return false; //Retornar futura excepcion.
-
             }
-            board[x, y] = token;
+            _board[x, y] = token;
 
             return true;
-
         }
 
         public Boolean CheckWinner()
         {
             Boolean winner = false;
 
-            for (int i = 0; i < this.board.GetLength(0); i++)
+            for (int i = 0; i < this._board.GetLength(0); i++)
             {
                 winner |= CheckRow(i);
                 winner |= CheckColumn(i);
-
             }
 
             return CheckDiagonal() || winner;
-
         }
 
         public Boolean CheckDrow()
         {
-
-            foreach(String s in board)
+            foreach(String s in _board)
             {
-
                 if (String.IsNullOrWhiteSpace(s))
                 {
                     return false;
                 }
-
             }
 
             return true;
@@ -76,21 +61,20 @@ namespace Business.Models
         private Boolean CheckRow(int x)
         {     
             int i = 0;
-            string firstPosition = board[x,0];
+            string firstPosition = _board[x,0];
           
                 if (!firstPosition.Equals(""))
                 {        
-                    while(firstPosition == board[x, ++i] && i<board.GetLength(x))
+                    while(firstPosition == _board[x, ++i] && i<_board.GetLength(0)-1)
                     {
                        
                     }
-
-                    if(firstPosition == board[x, i])
-                {
-                    return true;
+                        if(firstPosition == _board[x, i])
+                        {
+                            return true;
+                        }
                 }
-                }
-         
+                
                 return false;
 
         }
@@ -98,16 +82,19 @@ namespace Business.Models
         private Boolean CheckColumn(int y)
         {
             int i = 0;
-            string firstPosition = board[0, y];
+            string firstPosition = _board[0, y];
 
             if (!firstPosition.Equals(""))
             {
-                while (firstPosition == board[++i, y])
+                while (firstPosition == _board[++i, y] && i < _board.GetLength(0)-1)
                 {
-                    if (i == 2)
-                        return true;
+                   
                 }
 
+                    if (firstPosition == _board[i, y])
+                    {
+                        return true;
+                    }
             }
 
             return false;
@@ -116,13 +103,12 @@ namespace Business.Models
 
         private Boolean CheckDiagonal()
         {
-
             int i = 0;
-            string firstPosition = board[0, 0];
+            string firstPosition = _board[0, 0];
 
             if (!firstPosition.Equals(""))
             {
-                while (firstPosition == board[++i, i])
+                while (firstPosition == _board[++i, i])
                 {
                     if (i == 2)
                         return true;
@@ -130,11 +116,11 @@ namespace Business.Models
 
             }
             i = 0;
-            firstPosition = board[0, 2];
+            firstPosition = _board[0, 2];
 
             if (!firstPosition.Equals(""))
             {
-                while (firstPosition == board[++i, 2-i])
+                while (firstPosition == _board[++i, 2-i])
                 {
                     if (i == 2)
                         return true;

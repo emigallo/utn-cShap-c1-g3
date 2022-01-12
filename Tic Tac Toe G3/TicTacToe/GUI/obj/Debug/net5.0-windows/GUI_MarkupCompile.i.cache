@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\elinnaga\source\repos\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\obj\Debug\net5.0-windows\
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\obj\Debug\net5.0-windows\
 GUI
 none
 false
 TRACE;DEBUG;NET;NET5_0;NETCOREAPP
-C:\Users\elinnaga\source\repos\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\App.xaml
+C:\Users\martgome\Desktop\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\App.xaml
 3-1508259114
 
 91212526932
-1941094200070
+19469109958
 Views\LobbyView.xaml;Views\MenuView.xaml;Views\TicTacToeView.xaml;
 
-False
+True
 

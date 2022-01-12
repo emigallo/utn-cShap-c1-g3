@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Models
 {
@@ -30,7 +27,6 @@ namespace Business.Models
             int map = this._mapping[Tuple.Create(x, y)];
             _boardView = _boardView.Remove(map, 1).Insert(map, token);
         }
-
 
         public void PrintBoard()
         {

@@ -4,6 +4,53 @@
              xmlns:local="clr-namespace:GUI"
              StartupUri="Views/MenuView.xaml">
     <Application.Resources>
+
+        <ResourceDictionary>
+
+            <Style TargetType="Button" x:Key="StandarButton">
+                
+                <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+
+            </Style>
+
+            <Style TargetType="Button" x:Key="TokenButton" BasedOn="{StaticResource StandarButton}">
+
+                <Setter Property="FontFamily" Value="Comic Sans MS" ></Setter>
+                <Setter Property="FontSize" Value="36"></Setter>
+                <Setter Property="FontWeight" Value="Bold"></Setter>
+                               
+            </Style>
+
+            <Style x:Key="OptionsButton" TargetType="Button" BasedOn="{StaticResource StandarButton}">
+
+                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="FontSize" Value="22"></Setter>
+            </Style>
+            
+            <Style x:Key="StandarLabel" TargetType="Label">
+
+                <Setter Property="HorizontalAlignment" Value="Center"></Setter>
+                <Setter Property="VerticalAlignment" Value="Center"></Setter>
+                <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+                <Setter Property="FontSize" Value="48"></Setter>
+
+            </Style>
+            
+            <Style x:Key="TicTacToe" TargetType="Label" BasedOn="{StaticResource StandarLabel}">
+
+                <Setter Property="Content" Value="Tic Tac Toe"></Setter>
+                <Setter Property="Grid.Row" Value="0"></Setter>
+                <Setter Property="Grid.Column" Value="1"></Setter>
+
+            </Style>
+
+            <Style x:Key="LabelOptions" TargetType="Label" BasedOn="{StaticResource StandarLabel}">
+            
+            </Style>
+            
+        </ResourceDictionary>
+        
          
     </Application.Resources>
 </Application>

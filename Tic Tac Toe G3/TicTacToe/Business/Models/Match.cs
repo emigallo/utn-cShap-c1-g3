@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Business.Models
 {
@@ -15,7 +11,6 @@ namespace Business.Models
         private Boolean _gameOver;
         private BoardView _boardView;
         private String _lastSymbol;
-
 
         public Match(String namePlayer1, String namePlayer2)
         {
@@ -34,7 +29,6 @@ namespace Business.Models
                 throw new Exception("Juego terminado");
             }
 
-
             if (!this._actualPlayer.AddToken(x, y, _boardView))
             {
                 return false;
@@ -50,9 +44,7 @@ namespace Business.Models
 
                 return this._gameOver;
             }
-
-
-            
+          
             SwitchPlayer();
 
             return false;
@@ -75,12 +67,6 @@ namespace Business.Models
         {
             return new String (this._lastSymbol);
         }
-
-  
-
-
-
-
 
     }
 }

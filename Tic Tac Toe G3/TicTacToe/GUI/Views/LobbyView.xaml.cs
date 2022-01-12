@@ -1,16 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
 
 namespace GUI.Views
 {
@@ -23,8 +14,8 @@ namespace GUI.Views
         private String _player1;
         private String _player2;
         private MenuView _menuView;
-
         private Dictionary<String, Func<String,String>> _textBoxMap;
+
         public LobbyView()
         {
             _player1 = new String("");
@@ -37,9 +28,8 @@ namespace GUI.Views
 
         private void TextBox_Player(object sender, RoutedEventArgs e)
         {
-            TextBox textBox = sender as TextBox;
-            String key = textBox.Name;
-            _textBoxMap[key].Invoke(textBox.Text);        
+            TextBox textBox = sender as TextBox;     
+            _textBoxMap[textBox.Name].Invoke(textBox.Text);        
         }
 
         private void Button_Back(object sender, RoutedEventArgs e)
@@ -51,13 +41,14 @@ namespace GUI.Views
         private void Button_Start(object sender, RoutedEventArgs e)
         {           
             _ticTacToe = new TicTacToeView(_player1, _player2);
+            this.Hide();
             _ticTacToe.Show();
-            this.Close();
+          
         }
 
-
-
-
-       
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown(); 
+        }
     }
 }

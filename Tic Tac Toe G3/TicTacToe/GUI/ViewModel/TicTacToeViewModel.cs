@@ -1,35 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using Business.Models;
-using System.Threading.Tasks;
 
 namespace GUI.ViewModel
 {
     public class TicTacToeViewModel
     {
-
         private Dictionary<string, Coordinates> _buttonMapping;
-        private Match match;
+        private Match _match;
 
         public TicTacToeViewModel(String namePlayer1,String namePlayer2)
         {
-            match = new Match(namePlayer1, namePlayer2);
+            _match = new Match(namePlayer1, namePlayer2);
             _buttonMapping = new Dictionary<string, Coordinates>();
 
             for (int i = 0; i <= 2; i++)
             {
-
                 for (int j = 0; j <= 2; j++)
                 {              
                     _buttonMapping.Add((3 * i + j).ToString(), new Coordinates(i, j));
                 }
             }
         }
+
         public Boolean PlayGame(int x, int y)
         {
-           return match.PlayGame(x, y);
+           return _match.PlayGame(x, y);
         }
 
         public Coordinates GetCoordinate(String key)
@@ -39,9 +35,7 @@ namespace GUI.ViewModel
 
         public String GetSymbol()
         {
-            return match.GetSymbol();
-        }
-
-       
+            return _match.GetSymbol();
+        }    
     }
 }

@@ -27,13 +27,11 @@ namespace GUI.Views
         private Dictionary<String, Func<String,String>> _textBoxMap;
         public LobbyView()
         {
-
             _player1 = new String("");
             _player2 = new String("");
             _textBoxMap = new Dictionary<String, Func<String,String>>();
             _textBoxMap.Add("player1", val => _player1 = val);
             _textBoxMap.Add("player2",  val => _player2 = val);
-
             InitializeComponent();
         }
 
@@ -41,9 +39,7 @@ namespace GUI.Views
         {
             TextBox textBox = sender as TextBox;
             String key = textBox.Name;
-            _textBoxMap[key].Invoke(textBox.Text);
-        
-           
+            _textBoxMap[key].Invoke(textBox.Text);        
         }
 
         private void Button_Back(object sender, RoutedEventArgs e)
@@ -54,8 +50,6 @@ namespace GUI.Views
         }
         private void Button_Start(object sender, RoutedEventArgs e)
         {           
-            Button button = sender as Button;
-
             _ticTacToe = new TicTacToeView(_player1, _player2);
             _ticTacToe.Show();
             this.Close();

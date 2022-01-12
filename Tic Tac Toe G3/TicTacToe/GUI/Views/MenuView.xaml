@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI.Views"
         mc:Ignorable="d"
-        Title="MenuView" Height="500" Width="700" ResizeMode="NoResize">
+        Title="MenuView" Height="500" Width="700" ResizeMode="NoResize" Closing="Window_Closing">
     <Grid>
         <Grid.Background>
             <ImageBrush ImageSource="C:\Users\elinnaga\source\repos\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\Assets\paper.png" Stretch="UniformToFill"/>

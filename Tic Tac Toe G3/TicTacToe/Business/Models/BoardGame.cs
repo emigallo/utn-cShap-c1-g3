@@ -80,12 +80,15 @@ namespace Business.Models
           
                 if (!firstPosition.Equals(""))
                 {        
-                    while(firstPosition == board[x, ++i])
+                    while(firstPosition == board[x, ++i] && i<board.GetLength(x))
                     {
-                        if (i == 2)
-                            return true;
+                       
                     }
 
+                    if(firstPosition == board[x, i])
+                {
+                    return true;
+                }
                 }
          
                 return false;

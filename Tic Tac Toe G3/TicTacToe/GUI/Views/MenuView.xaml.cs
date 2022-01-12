@@ -20,29 +20,28 @@ namespace GUI.Views
     /// </summary>
     public partial class MenuView : Window
     {
-        private LobbyView lobby;
+        private LobbyView _lobby;
         public MenuView()
         {
-            lobby = new LobbyView();
+            _lobby = new LobbyView();
             InitializeComponent();
 
         }
 
         private void Button_Start_Game(object sender, RoutedEventArgs e)
         {
-            Button button = sender as Button;
             this.Hide();
-            lobby.Show();
-
-
+            _lobby.Show();
         }
 
         private void Button_Exit_Game(object sender, RoutedEventArgs e)
-        {
-            Button button = sender as Button;
-            
+        {           
             System.Windows.Application.Current.Shutdown();
         }
 
+        private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            System.Windows.Application.Current.Shutdown();
+        }
     }
 }

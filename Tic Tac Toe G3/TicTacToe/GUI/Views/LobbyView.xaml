@@ -6,14 +6,7 @@
         xmlns:local="clr-namespace:GUI.Views"
         mc:Ignorable="d"
         Title="LobbyView" Height="500" Width="700" ResizeMode="NoResize" Closing="Window_Closing">
-    
-    <Window.Background>
-        <ImageBrush>
-            <ImageBrush.ImageSource>
-                <BitmapImage UriSource="C:\Users\elinnaga\source\repos\utn-cShap-c1-g3\Tic Tac Toe G3\TicTacToe\GUI\Assets\paper.png"/>
-            </ImageBrush.ImageSource>
-        </ImageBrush>
-    </Window.Background>
+
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition ></RowDefinition>

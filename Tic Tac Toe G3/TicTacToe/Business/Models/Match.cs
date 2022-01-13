@@ -73,5 +73,15 @@ namespace Business.Models
             return this._actualPlayer.Name;
         }
 
+        public Boolean CheckDrow()
+        {
+            return _boardGame.CheckDrow();
+        }
+
+        public Boolean CheckWinner()
+        {
+            return _boardGame.CheckWinner();
+        }
+
     }
 }

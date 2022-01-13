@@ -17,6 +17,7 @@
             <Style TargetType="Button" x:Key="StandarButton">
                 
                 <Setter Property="FontFamily" Value="Comic Sans MS"></Setter>
+                <Setter Property="Background" Value="Transparent"></Setter>
 
             </Style>
 
@@ -25,7 +26,7 @@
                 <Setter Property="FontFamily" Value="Comic Sans MS" ></Setter>
                 <Setter Property="FontSize" Value="36"></Setter>
                 <Setter Property="FontWeight" Value="Bold"></Setter>
-                <Setter Property="Background" Value="Transparent"></Setter>
+              
                                
             </Style>
 
@@ -34,6 +35,8 @@
                 <Setter Property="HorizontalAlignment" Value="Center"></Setter>
                 <Setter Property="VerticalAlignment" Value="Center"></Setter>
                 <Setter Property="FontSize" Value="22"></Setter>
+                <Setter Property="BorderBrush" Value="Transparent"></Setter>
+                
             </Style>
             
             <Style x:Key="StandarLabel" TargetType="Label">

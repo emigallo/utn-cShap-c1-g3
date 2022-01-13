@@ -14,6 +14,7 @@ namespace Business.Models
                 for (int j = 0; j <= 2; j++)
                 {
                     this._board[i, j] = new String("");
+                    
                 }
 
             }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Media;
+using System.Windows.Media.Imaging;
 
 namespace GUI.Views
 {
@@ -23,6 +25,7 @@ namespace GUI.Views
             _textBoxMap = new Dictionary<String, Func<String,String>>();
             _textBoxMap.Add("player1", val => _player1 = val);
             _textBoxMap.Add("player2",  val => _player2 = val);
+            this.Background = new ImageBrush(new BitmapImage(new Uri("../../../Assets/paper.png", UriKind.Relative)));
             InitializeComponent();
         }
 
@@ -53,7 +56,7 @@ namespace GUI.Views
             _ticTacToe = new TicTacToeView(_player1, _player2);
             this.Hide();
             _ticTacToe.Show();
-          
+           
         }
 
         private void Window_Closing(object sender, System.ComponentModel.CancelEventArgs e)

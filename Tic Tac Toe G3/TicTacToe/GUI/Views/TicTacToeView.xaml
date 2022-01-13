@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:GUI"
         mc:Ignorable="d"
-        Title="TicTacToe" Height="500" Width="700" Closing="Window_Closing" ResizeMode="NoResize">
+        Title="TicTacToe" Height="600" Width="700" Closing="Window_Closing" ResizeMode="NoResize">
 
     <Grid>
 
@@ -30,7 +30,7 @@
 
         
         <Label Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="5" Style="{StaticResource TicTacToe}"></Label>
-        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Turno de : " Style="{StaticResource PlayerLabel}"></Label>
+        <Label Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Content="Turno de:" Style="{StaticResource PlayerLabel}"></Label>
         <Label Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2" x:Name="lbl_CurrentPlayer" Style="{StaticResource PlayerLabel}"></Label>
         <Button Content="Play Again" Grid.Column="4" Grid.Row="2" Grid.ColumnSpan="2" Style="{StaticResource OptionsButton}" Click="Button_Click_1"></Button>
         <Button Content="Change Players" Grid.Column="4" Grid.Row="3" Grid.ColumnSpan="2" Style="{StaticResource OptionsButton}" Click="btn_back"></Button>
